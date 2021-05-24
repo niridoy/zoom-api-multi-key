@@ -2,7 +2,7 @@
     "name": "spn2/laravel-zoom-api-multi-key",
     "description": "Laravel Zoom package for multi key user",
     "homepage": "https://github.com/MacsiDigital/laravel-zoom",
-    "keywords": ["macsidigital", "laravel-zoom", "zoom", "laravel", "api", "client"],
+    "keywords": ["macsidigital", "laravel-zoom", "zoom", "laravel", "api", "client","SPN"],
     "license": "MIT",
     "type": "library",
     "authors": [
