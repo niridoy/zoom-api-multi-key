@@ -46,8 +46,8 @@ class Entry extends ApiEntry
      */
     public function __construct($apiKey = null, $apiSecret = null, $tokenLife = null, $maxQueries = null, $baseUrl = null)
     {
-        $this->apiKey = Auth::user()->apiKey() ? Auth::user()->apiKey() : config('zoom.api_key');
-        $this->apiSecret = Auth::user()->apiSecret() ? Auth::user()->apiSecret() : config('zoom.api_secret');
+        $this->apiKey = auth()->user()->apiKey() ? auth()->user()->apiKey() : config('zoom.api_key');
+        $this->apiSecret = auth()->user()->apiSecret() ? auth()->user()->apiSecret() : config('zoom.api_secret');
         $this->tokenLife = $tokenLife ? $tokenLife : config('zoom.token_life');
         $this->maxQueries = $maxQueries ? $maxQueries : (config('zoom.max_api_calls_per_request') ? config('zoom.max_api_calls_per_request') : $this->maxQueries);
         $this->baseUrl = $baseUrl ? $baseUrl : config('zoom.base_url');
